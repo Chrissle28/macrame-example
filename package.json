@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.4.2",
+        "@inertiajs/inertia": "^0.10.1",
+        "@inertiajs/inertia-vue3": "^0.5.2",
+        "@inertiajs/progress": "^0.2.6",
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "tailwindcss": "^3.0.7",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.4",
+        "v-calendar": "^3.0.0-alpha.6",
+        "vue": "^3.2.26",
+        "vue-loader": "^17.0.0",
+        "vuedraggable": "^4.1.0"
+    },
+    "dependencies": {
+        "@macramejs/admin-config": "file:packages/macramejs/admin-config",
+        "@macramejs/admin-vue3": "file:packages/macramejs/admin-vue3",
+        "@macramejs/macrame": "file:packages/macramejs/macrame",
+        "@macramejs/macrame-vue3": "file:packages/macramejs/macrame-vue3"
+    }
+}
