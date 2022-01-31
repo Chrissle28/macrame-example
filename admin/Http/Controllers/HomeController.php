@@ -16,4 +16,15 @@ class HomeController
     {
         return $page->page('Home/Show');
     }
+
+    /**
+     * Show the home page for the admin application.
+     *
+     * @param  Page $page
+     * @return Page
+     */
+    public function components(Page $page)
+    {
+        return $page->page('Components/Show');
+    }
 }

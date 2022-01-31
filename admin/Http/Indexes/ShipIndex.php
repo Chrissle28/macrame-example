@@ -8,7 +8,7 @@ use Macrame\Table\Table;
 
 class ShipIndex extends Table
 {
-    protected $defaultPerPage = 100;
+    protected $defaultPerPage = 10;
 
     /**
      * Handle search.

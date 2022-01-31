@@ -7,18 +7,13 @@
             {{ ship.name }}
         </Td>
         <Td slim>
-            <span
-                class="inline-flex py-1 px-4 text-sm rounded-full"
-                :class="{ 'bg-green': ship.active, 'bg-red': !ship.active }"
-            >
-                {{ ship.active ? 'Aktiv' : 'Inaktiv' }}
-            </span>
+            <Badge :variant="ship.active ? 'green' : 'red'">{{
+                ship.active ? 'Aktiv' : 'Inaktiv'
+            }}</Badge>
         </Td>
         <Td class="flex justify-end">
-            <Link
-                class="text-blue underline duration-200 hover:text-blue-600"
-                :href="`/admin/ships/${ship.id}`"
-                >Schiff anzeigen</Link
+            <Button text :href="`/admin/ships/${ship.id}`"
+                >Schiff anzeigen</Button
             >
         </Td>
     </Tr>

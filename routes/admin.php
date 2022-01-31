@@ -13,6 +13,8 @@ Route::group([
 ], function () {
     Route::get('/', [HomeController::class, 'show']);
 
+    Route::get('/components', [HomeController::class, 'components']);
+
     Route::get('/ships', [ShipController::class, 'index'])->name('ships.index');
     Route::get('/ships/items', [ShipController::class, 'items'])->name('ships.items');
     Route::get('/ships/{ship}', [ShipController::class, 'show'])->name('ships.show');
